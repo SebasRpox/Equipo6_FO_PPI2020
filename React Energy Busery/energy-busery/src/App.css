@@ -1,0 +1,11 @@
+.Container img{
+  margin: 50px;
+  width: 250px;
+  height: 300px;
+  margin-left: 500px;
+}
+.Spinner{
+  margin-left: 530px;
+  padding: 12px;
+  font-family: 'Courier New', Courier, monospace;
+}
