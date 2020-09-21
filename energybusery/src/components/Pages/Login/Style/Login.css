@@ -1,0 +1,24 @@
+.contenedor{
+    max-width: 50rem;
+    max-height: 100rem;
+    margin-top: 8%;
+}
+.texto{
+    display: flex;
+    margin-top: 4%;
+}
+.forgot-password{
+    margin-left: 54%;
+}
+.form-control{
+    margin-bottom: 5%;
+    margin-top: 2%;
+}
+.login-with-link {
+    color: rgb(56, 121, 241);
+    font-size: 24px;
+    margin-left: 15px;
+  }  
+.login-with-link:hover{
+    color: rgb(56, 121, 241);
+}

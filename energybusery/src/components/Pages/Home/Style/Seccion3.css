@@ -1,0 +1,19 @@
+.cards{
+    margin-bottom: 8%;
+    margin-top: 8%;
+    text-align: center;
+}
+.titulo{
+    font-size: 56px;
+    margin-bottom: 50px;
+    font-weight: 600;
+    color:rgb(56, 158, 56);
+    text-align: center;
+}
+.container{
+    width: 72rem;
+}
+.card{
+    max-width: 18rem;
+    max-height: 23rem;
+}

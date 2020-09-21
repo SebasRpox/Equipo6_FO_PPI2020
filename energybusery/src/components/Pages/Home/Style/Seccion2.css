@@ -1,0 +1,20 @@
+.titulo{
+    font-size: 56px;
+    margin-bottom: 35px;
+    font-weight: 600;
+    color:rgb(56, 158, 56);
+}
+.parrafo{
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+.subtitulo{
+    margin-bottom: 35px;
+    font-weight: 600;
+}
+.card{
+    max-width: 18rem;
+}
+.container{
+
+}
