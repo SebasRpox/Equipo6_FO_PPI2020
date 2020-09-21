@@ -3,6 +3,8 @@ import "./Registro.css";
 import Title from "./Title/Title";
 import Label from "./Label/Label";
 import Input from "./Input/Input";
+import fa from "../img/facebook.svg"
+import go from "../img/google.png";
 
 function Registro() {
     const [user, setUser] = useState("");
@@ -50,7 +52,7 @@ function Registro() {
             <label>Te registraste con éxito</label> 
             </>:
             <div className="registro-content">
-                <Title text="¡Bienvenid@!" />
+                <Title text="Registro" />
                 {hasError && <label className="label-alert">Los datos ingresados son incorrectos</label>}
                 <Label text="Usuario" />
                 <Input
@@ -97,8 +99,16 @@ function Registro() {
                     <button className="submit-button" onClick={handleSubmit}>
                         Ingresar
                     </button>
+                    <label className="label-iniciar_sesion">Quiero <a href="#">iniciar sesión</a> </label>
+                </div>
+                <div className="login">
+                    También puedes registrarte con:
                     
                 </div>
+                <div className="iconos-registro">
+                <a className="img-google" href="https://accounts.google.com/AccountChooser/signinchooser?continue" ><img src={go} width="30" height="30" alt="cselogo"/></a> 
+                    <a className="img-facebook" href="https://www.facebook.com/" ><img src={fa} width="30" height="30" alt="cselogo"/></a> 
+                    </div>
             
             </div>
             }

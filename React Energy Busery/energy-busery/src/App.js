@@ -1,11 +1,41 @@
+
+import React from 'react';
+// import logo from './logo.svg';
+import './App.css';
+import Header from './Components/header'
+import Banner from './Components/Banner'
+import About from './Components/About'
+import Navbar from './Components/Navbar'
+
+
+
+function App() {
+  return (
+    <div className="App"> 
+    <Navbar />
+    <hr />
+      <Header />
+      <hr />
+      <Banner /> 
+      <br />
+      <About />
+      <br />
+      
+    </div>
+  );
+}
+
+export default App;
+
+/*
 import React from "react";
 import { useState, useEffect } from "react";
 import axios from "axios";
+import Perfil from "./Perfil/Components/Perfil";
 import "./App.css";
 import Registro from "./Registro/Components/Registro";
 import Logo from "./Registro/img/logo.png";
 import Spinner from "react-bootstrap/Spinner";
-
 
 class App extends React.Component {
 
@@ -39,7 +69,6 @@ class App extends React.Component {
   }
 }
 
-/*
 const App = () => {
   const [lyricsItem, setLyricsItem] = useState(null);
   const [loading, setLoading] = useState(false);
@@ -69,5 +98,5 @@ const App = () => {
     </div>
   );
 };
-*/
 export default App;
+*/
