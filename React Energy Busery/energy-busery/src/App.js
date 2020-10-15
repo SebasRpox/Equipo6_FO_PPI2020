@@ -1,102 +1,32 @@
-
-import React from 'react';
-// import logo from './logo.svg';
-import './App.css';
-import Header from './Components/header'
-import Banner from './Components/Banner'
-import About from './Components/About'
-import Navbar from './Components/Navbar'
-
-
-
-function App() {
-  return (
-    <div className="App"> 
-    <Navbar />
-    <hr />
-      <Header />
-      <hr />
-      <Banner /> 
-      <br />
-      <About />
-      <br />
-      
-    </div>
-  );
-}
-
-export default App;
-
-/*
 import React from "react";
-import { useState, useEffect } from "react";
-import axios from "axios";
-import Perfil from "./Perfil/Components/Perfil";
-import "./App.css";
-import Registro from "./Registro/Components/Registro";
-import Logo from "./Registro/img/logo.png";
-import Spinner from "react-bootstrap/Spinner";
+import Configuraciones from "./Configuraciones/Configuraciones";
+import Perfil from "./Perfil/Perfil";
+import Ayuda from "./Ayuda/Ayuda";
+import { BrowserRouter,Route,Router, Switch} from "react-router-dom"
+//estilos
+import './App.css';
 
-class App extends React.Component {
+//componentes
 
-  state = {
-    cambio: true
-  }
+import Login from "./components/Pages/Login/Login";
+import Cards from "./components/Pages/Dashboard/Cards";
+import Home from "./components/Pages/Home/Home";
+import Baterias from "./components/Pages/Baterias/Baterias";
+import Layout from "./components/Layout.jsx";
 
-  render() {
-    if(this.state.cambio){
-      setTimeout(() => {
-        this.setState({cambio:false})
-      }, 3500);
-      return (
-        <div className="Container">
-          <div><img className="logo" src={Logo}  />
-          
-        </div>
-        <div className="Spinner">
-          <Spinner animation="grow" />
-          <h3>Cargando...</h3>
-        </div>
-        </div>
-        
-      )
-    }else{
-      return(
-        <Registro />
-      )
-    }
+function App(){
+  return(
     
-  }
+    <BrowserRouter>
+      <Switch>
+        <Layout>
+        <Route exact path="/Home" component={Home}/>
+        <Route exact path="/Login" component={Login}/>
+        <Route exact path="/Dashboard" component={Cards}/>
+        <Route exact path="/Baterias" component={Baterias}/>
+        </Layout>
+      </Switch>
+    </BrowserRouter>
+  ) 
 }
-
-const App = () => {
-  const [lyricsItem, setLyricsItem] = useState(null);
-  const [loading, setLoading] = useState(false);
-
-  const lyricsFuntion = async () => {
-    try {
-      const data = await axios
-        .get(`https://api.lyrics.ovh/v1/GHOSTEMANE/Squeeze`)
-        .then((res) => {
-          console.log(res);
-          setLyricsItem(res.data.lyrics);
-        });
-      setLoading(true);
-    } catch (e) {
-      console(e);
-    }
-  };
-
-  useEffect(() => {
-    lyricsFuntion();
-  }, []);
-
-  return (
-    <div className="App">
-      {lyricsItem}
-      {loading ? lyricsItem : <Spinner animation="grow" />}
-    </div>
-  );
-};
 export default App;
-*/
