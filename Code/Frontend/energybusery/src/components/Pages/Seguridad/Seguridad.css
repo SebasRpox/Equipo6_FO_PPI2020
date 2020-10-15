@@ -1,0 +1,30 @@
+.sobre-nosotros {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 50px;
+    font-weight: 600;
+    color: rgb(56, 158, 56);
+  }
+  .seguridad {
+    text-align: center;
+    background: rgb(157, 212, 157);
+  }
+  .top {
+    background: #353a40;
+    display: flex;
+    padding-left: 15%;
+    text-align: center;
+  }
+  .top__img {
+    margin-right: 5%;
+  }
+  .opcion {
+    margin-top: 7%;
+    padding: 7%;
+  }
+  .Boton {
+    background: rgb(56, 158, 56);
+  }
+  .Boton:hover {
+    background: rgb(12, 109, 12);
+  }

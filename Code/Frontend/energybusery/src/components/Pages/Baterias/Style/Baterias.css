@@ -1,0 +1,82 @@
+.baterias{
+    margin-bottom: 8%;
+    margin-right: 5%;
+}
+.porcentaje{
+    text-align: center;
+    font-size: 56px;
+    margin-top: 3%;
+    margin-right: 5%;
+    font-weight: 600;
+    color:#353A40;
+}
+
+.switch-container{
+	margin-left: 75%
+}
+.switch-container-h1{
+	font-size: 25px;
+	padding:0;
+}
+
+input[type="checkbox"].switch  {
+	opacity: 0;
+}
+
+input[type="checkbox"].switch + div {
+	vertical-align: middle;
+	width: 20px;
+	height: 10px;
+	border-radius: 999px;
+	background-color:rgb(108, 158, 108);
+	-webkit-transition-duration: .4s;
+	transition-duration: .4s;
+	-webkit-transition-property: background-color, box-shadow;
+	transition-property: background-color, box-shadow;
+	cursor: pointer;
+}
+
+input[type="checkbox"].switch + div span {
+	position: absolute;
+    color: white;
+    margin-top: 12px;
+}
+
+
+input[type="checkbox"].switch:checked + div {
+	width: 64px;
+	background-position: 0 0;
+	background-color: rgb(165, 209, 165);
+}
+
+input[type="checkbox"].switch + div {
+	width: 64px;
+	height: 28px;
+}
+
+
+input[type="checkbox"].switch:checked + div {
+	background-color: rgb(56, 158, 56);
+}
+
+input[type="checkbox"].switch + div > div {
+	float: left;
+	width: 26px; height: 26px;
+	border-radius: inherit;
+	background: #ffffff;
+	-webkit-transition-timing-function: cubic-bezier(1,0,0,1);
+	transition-timing-function: cubic-bezier(1,0,0,1);
+	-webkit-transition-duration: 0.4s;
+	transition-duration: 0.4s;
+	-webkit-transition-property: transform, background-color;
+	transition-property: transform, background-color;
+	pointer-events: none;
+	margin-top: 1px;
+	margin-left: 1px;
+}
+
+input[type="checkbox"].switch:checked + div > div {
+	-webkit-transform: translate3d(46px, 0, 0);
+	transform: translate3d(36px, 0, 0);
+}
+
