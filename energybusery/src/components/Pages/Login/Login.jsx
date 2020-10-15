@@ -9,6 +9,7 @@ import { FcGoogle } from "react-icons/fc"
 class Login extends React.Component {
     render() {
         return (
+            
             <body>
                 <div className="contenedor">
                     <form>

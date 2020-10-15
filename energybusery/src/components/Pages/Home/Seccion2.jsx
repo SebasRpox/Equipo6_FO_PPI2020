@@ -3,7 +3,7 @@ import "./Style/Seccion2.css"
 class Seccion2 extends React.Component {
     render() {
         return (
-            <div className="acerca-de">
+            <div className="acerca-de" id="Seccion2">
                 <div className="contenedor">
                     <h1 className="titulo">Objetivos</h1>
                     <img className="imagen" src="https://i.imgur.com/OZrYVT2.jpg" alt="" width="100" height="100" />

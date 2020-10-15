@@ -1,44 +1,30 @@
 import React from 'react';
-import { BrowserRouter as Router, Switch} from "react-router-dom"
+import { BrowserRouter,Route,Router, Switch} from "react-router-dom"
 //estilos
 import './App.css';
 
 //componentes
-import Menu from "./components/Pages/Menu"
-import Banner from "./components/Pages/Home/Banner"
-import Footer from "./components/Pages/Footer"
-import Seccion1 from './components/Pages/Home/Seccion1';
-import Seccion2 from "./components/Pages/Home/Seccion2";
-import Seccion3 from "./components/Pages/Home/Seccion3";
+
 import Login from "./components/Pages/Login/Login"
 import Cards from "./components/Pages/Dashboard/Cards"
+import Home from "./components/Pages/Home/Home"
+import Baterias from "./components/Pages/Baterias/Baterias"
+import Layout from "./components/Layout"
 
 function App() {
   return (
 
-      // <Router>
-      //   <Menu/>
-      //   <Switch>
-      //     <Banner/>
-      //   </Switch>
-      //   <Seccion1/>
-      //   <Seccion2/>
-      //   <Seccion3/>
-      //   <Footer/>
-      // </Router>
+    <BrowserRouter>
+      <Switch>
+        <Layout>
+        <Route exact path="/Home" component={Home}/>
+        <Route exact path="/Login" component={Login}/>
+        <Route exact path="/Dashboard" component={Cards}/>
+        <Route exact path="/Baterias" component={Baterias}/>
+        </Layout>
+      </Switch>
+    </BrowserRouter>
 
-
-    // <Router>
-    //   <Login/>
-    // </Router>
-
-    <Router>
-    <Menu/>
-    <Switch>
-      <Cards/>
-    </Switch>
-    <Footer/>
-  </Router>
   );
 }
 

@@ -1,6 +1,7 @@
 import React from "react"
 import "./Cards.css"
 import { Button } from "react-bootstrap"
+import {Link} from "react-router-dom"
 
 class Cards extends React.Component {
     render() {
@@ -28,7 +29,7 @@ class Cards extends React.Component {
                                             <div class="card-body text-center mt-4">
                                                 <h4 class="card-title">Mas informacion</h4>
                                                 <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis voluptate qui tempore mollitia aspernatur animi, enim, officia ducimus magni placeat, sint doloribus! Quod.</p>
-                                                <Button variant="success" size="sm">Bateria</Button>{' '}
+                                                <Link to="Baterias"><Button variant="success" size="sm">Bateria</Button>{' '}</Link>
                                             </div>
                                         </div>
                                     </div>

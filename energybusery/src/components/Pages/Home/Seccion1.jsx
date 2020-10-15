@@ -1,11 +1,11 @@
 import React from "react"
 import "./Style/Seccion1.css"
-import Button from 'react-bootstrap/Button'
+
 
 class Seccion1 extends React.Component {
     render() {
         return (
-            <div className="acerca-de">
+            <div className="acerca-de" id="Seccion1">
                 <div className="contenedor">
                     <h1 className="sobre-nosotros">¿Que és?</h1>
                     <h3 className="slogan">Energy Busery</h3>

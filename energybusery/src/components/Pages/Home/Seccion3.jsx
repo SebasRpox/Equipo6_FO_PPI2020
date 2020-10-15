@@ -4,7 +4,7 @@ import "./Style/Seccion3.css"
 class Seccion2 extends React.Component {
     render() {
         return (
-            <div className="cards">
+            <div className="cards" id="Seccion3">
                 <div className="container">
                     <h1 className="titulo">Desarrolladores</h1>
                     <div class="card-deck">
